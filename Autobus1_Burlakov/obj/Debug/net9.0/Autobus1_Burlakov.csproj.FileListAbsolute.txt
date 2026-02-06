@@ -200,3 +200,4 @@ D:\SummerCourse\Autobus1_Burlakov\Autobus1_Burlakov\bin\Debug\net9.0\FluentValid
 D:\SummerCourse\Autobus1_Burlakov\Autobus1_Burlakov\bin\Debug\net9.0\Bogus.dll
 D:\SummerCourse\Autobus1_Burlakov\Autobus1_Burlakov\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
 D:\SummerCourse\Autobus1_Burlakov\Autobus1_Burlakov\obj\Debug\net9.0\Autobus1_Burlakov.MvcApplicationPartsAssemblyInfo.cs
+D:\SummerCourse\Autobus1_Burlakov\Autobus1_Burlakov\obj\Debug\net9.0\Autobus1_Burlakov.sourcelink.json

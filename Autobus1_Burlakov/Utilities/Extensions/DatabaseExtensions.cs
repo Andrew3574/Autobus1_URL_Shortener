@@ -5,6 +5,10 @@ namespace Autobus1_Burlakov.Utilities.Extensions
 {
     public static class DatabaseExtensions
     {
+        /// <summary>
+        /// Initializes DB migration to load latest changes
+        /// </summary>
+        /// <param name="applicationBuilder"></param>
         public static void InitMigration(this IApplicationBuilder applicationBuilder)
         {
             using var scope = applicationBuilder.ApplicationServices.CreateScope();

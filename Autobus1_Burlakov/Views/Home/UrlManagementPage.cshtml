@@ -63,7 +63,6 @@
 
                                 <td>
                                     <div class="btn-group btn-group-sm" role="group">
-                                        <!-- Кнопка ОБНОВЛЕНИЯ (редактирования) - открывает форму редактирования -->
                                         <a asp-action="UrlUpdatePage"
                                            asp-controller="Home"
                                            asp-route-id="@url.Id"
@@ -72,7 +71,6 @@
                                             <i class="fas fa-edit"></i>
                                         </a>
 
-                                        <!-- Кнопка УДАЛЕНИЯ - форма с подтверждением -->
                                         <form method="post"
                                               asp-action="UrlDelete"
                                               asp-controller="Home"
