@@ -1,0 +1,108 @@
+﻿@model Urlsdatum
+
+@{
+    ViewData["Title"] = "Редактирование ссылки";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-edit me-2"></i>Редактирование ссылки
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="UrlUpdate">
+                        @Html.AntiForgeryToken()
+
+                        <!-- Скрытое поле для ID -->
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="CreationDate" />
+
+                        <!-- Длинный URL -->
+                        <div class="mb-3">
+                            <label asp-for="FullUrl" class="form-label fw-bold">
+                                <i class="fas fa-link me-1"></i>Длинный URL
+                            </label>
+                            <input type="url" asp-for="FullUrl"
+                                   class="form-control"
+                                   required>
+                            <span asp-validation-for="FullUrl" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Короткий URL -->
+                        <div class="mb-3">
+                            <label asp-for="ShortUrl" class="form-label fw-bold">
+                                <i class="fas fa-short me-1"></i>Короткий URL
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    @Context.Request.Scheme://@Context.Request.Host/
+                                </span>
+                                <input type="text" asp-for="ShortUrl"
+                                       class="form-control"
+                                       pattern="[A-Za-z0-9\-_]+"
+                                       maxlength="50"
+                                       required>
+                            </div>
+                            <span asp-validation-for="ShortUrl" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Счетчик переходов -->
+                        <div class="mb-3">
+                            <label asp-for="PassageCounter" class="form-label fw-bold">
+                                <i class="fas fa-bullseye me-1"></i>Счетчик переходов
+                            </label>
+                            <input type="number" asp-for="PassageCounter"
+                                   class="form-control"
+                                   min="0"
+                                   required>
+                            <span asp-validation-for="PassageCounter" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Дата создания (только для отображения) -->
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-calendar me-1"></i>Дата создания
+                            </label>
+                            <div class="form-control bg-light">
+                                @Model.CreationDate.ToString("dd.MM.yyyy")
+                            </div>
+                        </div>
+
+                        <!-- Кнопки действий -->
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-save me-1"></i>Сохранить изменения
+                            </button>
+                            <a asp-action="UrlManagement"
+                               class="btn btn-outline-secondary">
+                                <i class="fas fa-times me-1"></i>Отмена
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Валидация короткого URL
+        document.querySelector('input[name="ShortUrl"]').addEventListener('input', function(e) {
+            const value = this.value;
+            const pattern = /^[A-Za-z0-9\-_]+$/;
+
+            if (value && !pattern.test(value)) {
+                this.setCustomValidity('Только буквы, цифры, дефисы и подчеркивания');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+    </script>
+}

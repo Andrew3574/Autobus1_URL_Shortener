@@ -1,0 +1,568 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SummerCourse\\Autobus1_Burlakov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\home\\urlmanagementpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\home\\urlmanagementpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\home\\urlupdatepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\home\\urlupdatepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\autobus1dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\autobus1dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\repositories\\urldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\repositories\\urldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\repositories\\iurldatarepoitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\repositories\\iurldatarepoitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\utilities\\validators\\urldatavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\utilities\\validators\\urldatavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\utilities\\validators\\urldatadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\utilities\\validators\\urldatadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\home\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\home\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\models\\urlsdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\models\\urlsdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\autobus1_burlakov.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\autobus1_burlakov.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\utilities\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\utilities\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\utilities\\services\\iurlprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\utilities\\services\\iurlprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\utilities\\services\\urlprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\utilities\\services\\urlprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\models\\dtos\\urlsdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\models\\dtos\\urlsdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\20260205183149_initial_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\20260205183149_initial_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\20260205184207_initial_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\20260205184207_initial_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\autobus1dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\autobus1dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\efmigrationshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\efmigrationshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\20260205130029_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\20260205130029_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\20260205130834_initial_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\20260205130834_initial_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|d:\\summercourse\\autobus1_burlakov\\autobus1_burlakov\\data\\migrations\\20260205185908_initial_v6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D541A06-8A8C-40EC-8B65-4672BBC2EB44}|Autobus1_Burlakov\\Autobus1_Burlakov.csproj|solutionrelative:autobus1_burlakov\\data\\migrations\\20260205185908_initial_v6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 192,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UrlDataValidator.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Validators\\UrlDataValidator.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Utilities\\Validators\\UrlDataValidator.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Validators\\UrlDataValidator.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Utilities\\Validators\\UrlDataValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:47:36.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UrlUpdatePage.cshtml",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\UrlUpdatePage.cshtml",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Home\\UrlUpdatePage.cshtml",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\UrlUpdatePage.cshtml",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Home\\UrlUpdatePage.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T10:26:31.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\css\\StyleSheet.css",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Home\\css\\StyleSheet.css",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\css\\StyleSheet.css",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Home\\css\\StyleSheet.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-06T09:36:38.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T09:14:22.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UrlManagementPage.cshtml",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\UrlManagementPage.cshtml",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Home\\UrlManagementPage.cshtml",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\UrlManagementPage.cshtml*",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Home\\UrlManagementPage.cshtml*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T08:41:45.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T19:37:56.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20260205185908_Initial_v6.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205185908_Initial_v6.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\20260205185908_Initial_v6.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205185908_Initial_v6.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\20260205185908_Initial_v6.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T18:59:08.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20260205184207_Initial_v5.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205184207_Initial_v5.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\20260205184207_Initial_v5.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205184207_Initial_v5.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\20260205184207_Initial_v5.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T18:42:07.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260205183149_Initial_v4.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205183149_Initial_v4.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\20260205183149_Initial_v4.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205183149_Initial_v4.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\20260205183149_Initial_v4.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T18:31:49.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Autobus1_Burlakov\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswEIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T18:25:29.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUrlDataRepoitory.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\IUrlDataRepoitory.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Repositories\\IUrlDataRepoitory.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\IUrlDataRepoitory.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Repositories\\IUrlDataRepoitory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:26:11.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UrlsDataDto.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Models\\DTOs\\UrlsDataDto.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Models\\DTOs\\UrlsDataDto.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Models\\DTOs\\UrlsDataDto.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Models\\DTOs\\UrlsDataDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:17:28.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:08:45.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UrlProcessor.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Services\\UrlProcessor.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Utilities\\Services\\UrlProcessor.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Services\\UrlProcessor.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Utilities\\Services\\UrlProcessor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T15:34:00.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUrlProcessor.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Services\\IUrlProcessor.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Utilities\\Services\\IUrlProcessor.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Services\\IUrlProcessor.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Utilities\\Services\\IUrlProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T15:30:12.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20260205152802_Initial_v4.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Migrations\\20260205152802_Initial_v4.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T15:28:02.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DatabaseExtensions.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Extensions\\DatabaseExtensions.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Utilities\\Extensions\\DatabaseExtensions.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Extensions\\DatabaseExtensions.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Utilities\\Extensions\\DatabaseExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T14:54:09.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UrlDataDtoValidator.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Validators\\UrlDataDtoValidator.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Utilities\\Validators\\UrlDataDtoValidator.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Utilities\\Validators\\UrlDataDtoValidator.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Utilities\\Validators\\UrlDataDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T14:04:53.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UrlDataRepository.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\UrlDataRepository.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Repositories\\UrlDataRepository.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\UrlDataRepository.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Repositories\\UrlDataRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAA7wEYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:50:56.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260205134416_Initial_v3.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Migrations\\20260205134416_Initial_v3.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:44:16.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:26:56.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Efmigrationshistory.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\Efmigrationshistory.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\Efmigrationshistory.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\Efmigrationshistory.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\Efmigrationshistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:24:05.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Autobus1dbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\Autobus1dbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\Autobus1dbContextModelSnapshot.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\Autobus1dbContextModelSnapshot.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\Autobus1dbContextModelSnapshot.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwBcAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:15:32.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260205130834_Initial_v2.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205130834_Initial_v2.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\20260205130834_Initial_v2.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205130834_Initial_v2.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\20260205130834_Initial_v2.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:08:34.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20260205130029_Initial.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205130029_Initial.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Migrations\\20260205130029_Initial.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Migrations\\20260205130029_Initial.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Migrations\\20260205130029_Initial.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBQwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:00:29.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Urlsdatum.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Models\\Urlsdatum.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Models\\Urlsdatum.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Models\\Urlsdatum.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Models\\Urlsdatum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T12:51:39.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Autobus1dbContext.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Autobus1dbContext.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Data\\Autobus1dbContext.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Data\\Autobus1dbContext.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Data\\Autobus1dbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T12:47:06.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Autobus1_Burlakov.csproj",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Autobus1_Burlakov.csproj",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Autobus1_Burlakov.csproj",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Autobus1_Burlakov.csproj",
+              "RelativeToolTip": "Autobus1_Burlakov\\Autobus1_Burlakov.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-05T12:07:35.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\appsettings.json",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\appsettings.json",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\appsettings.json",
+              "RelativeToolTip": "Autobus1_Burlakov\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T11:16:47.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Program.cs",
+              "RelativeDocumentMoniker": "Autobus1_Burlakov\\Program.cs",
+              "ToolTip": "D:\\SummerCourse\\Autobus1_Burlakov\\Autobus1_Burlakov\\Program.cs",
+              "RelativeToolTip": "Autobus1_Burlakov\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T11:16:22.74Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 846,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 756,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 687,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

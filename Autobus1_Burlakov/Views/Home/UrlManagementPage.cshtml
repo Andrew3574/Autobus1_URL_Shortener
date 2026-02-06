@@ -1,0 +1,309 @@
+﻿@model List<Urlsdatum>
+@{
+    ViewData["Title"] = "Управление ссылками";
+    var baseUrl = $"{Context.Request.Scheme}://{Context.Request.Host}";
+}
+
+<link rel="stylesheet" href="~/css/UrlManagement.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="container-fluid mt-4">
+    <!-- Таблица -->
+    <div class="card shadow">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+
+                <table class="table table-hover mb-0">
+
+                    <thead class="table-light">
+                        <tr>
+                            <th>Сокращенный URL</th>
+                            <th>Длинный URL</th>
+                            <th>Дата создания</th>
+                            <th>Переходы</th>
+                            <th width="150">Управление</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="urls-table-body">
+                        @foreach (var url in Model)
+                        {
+                            <tr class="url-row" data-id="@url.Id">
+
+                                <td>
+                                    <div class="d-flex flex-column">
+                                        <strong>@url.ShortUrl</strong>
+                                        <small class="text-muted">
+                                            <a href="@baseUrl/@url.ShortUrl" target="_blank">
+                                                @baseUrl/@url.ShortUrl
+                                            </a>
+                                        </small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div style="max-width: 300px;" class="text-truncate" title="@url.FullUrl">
+                                        <a href="@url.FullUrl" target="_blank" class="text-decoration-none">
+                                            @url.FullUrl
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span title="@url.CreationDate.ToString("dd.MM.yyyy")">
+                                        @url.CreationDate.ToString("dd.MM.yyyy")
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge bg-@(url.PassageCounter > 0 ? "success" : "secondary") fs-6 passage-counter">
+                                        @url.PassageCounter
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <!-- Кнопка ОБНОВЛЕНИЯ (редактирования) - открывает форму редактирования -->
+                                        <a asp-action="UrlUpdatePage"
+                                           asp-controller="Home"
+                                           asp-route-id="@url.Id"
+                                           class="btn btn-warning m-1"
+                                           title="Редактировать">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+
+                                        <!-- Кнопка УДАЛЕНИЯ - форма с подтверждением -->
+                                        <form method="post"
+                                              asp-action="UrlDelete"
+                                              asp-controller="Home"
+                                              class="d-inline"
+                                              onsubmit="return confirm('Удалить эту ссылку?')">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="id" value="@url.Id" />
+                                            <button type="submit"
+                                                    class="btn btn-outline-danger m-1"
+                                                    title="Удалить">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="loading-more-indicator" class="text-center py-3 d-none">
+                <div class="spinner-border spinner-border-sm text-primary" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
+                </div>
+                <span class="ms-2 text-muted">Загрузка...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let currentPage = 1;
+        let isLoading = false;
+        let hasMore = true;
+        const BATCH_SIZE = 10; 
+
+        $(document).ready(function() {
+
+            // Настройка бесконечной прокрутки
+            setupInfiniteScroll();
+        });
+
+        function setupInfiniteScroll() {
+            $(window).scroll(function() {
+                if (isLoading || !hasMore) return;
+
+                const scrollTop = $(window).scrollTop();
+                const windowHeight = $(window).height();
+                const documentHeight = $(document).height();
+
+                if (scrollTop + windowHeight >= documentHeight - 300) {
+                    loadNextBatch();
+                }
+            });
+        }
+
+        function loadNextBatch() {
+            if (isLoading || !hasMore) return;
+
+            isLoading = true;
+            currentPage++;
+
+            showLoadingMore(true);
+            hideLoadMoreButton();
+
+            $.ajax({
+                url: '@Url.Action("GetUrlDataBatch", "Home")',
+                type: 'GET',
+                data: {
+                    page: currentPage
+                },
+                success: function(batch) {
+                    if (batch && batch.length > 0) {
+                        // Добавляем новые строки в таблицу
+                        batch.forEach(function(url) {
+                            const rowHtml = createUrlRowHtml(url);
+                            $('#urls-table-body').append(rowHtml);
+                        });
+
+                        // Если загрузилось меньше, чем размер пачки, значит больше данных нет
+                        if (batch.length < BATCH_SIZE) {
+                            hasMore = false;
+                        } else {
+                            showLoadMoreButton();
+                        }
+
+                        hideNoDataMessage();
+                    } else {
+                        // Больше данных нет
+                        hasMore = false;
+                        if (currentPage === 0 && $('#urls-table-body tr').length === 0) {
+                            showNoDataMessage();
+                        }
+                    }
+
+                    updateTotalCount();
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error loading batch:', error);
+                    alert('Ошибка при загрузке данных');
+                    currentPage--;
+                },
+                complete: function() {
+                    isLoading = false;
+                    showLoadingMore(false);
+                }
+            });
+        }
+
+                function createUrlRowHtml(url) {
+            const baseUrl = '@Context.Request.Scheme://@Context.Request.Host/';
+            const isPopular = url.passageCounter > 0;
+
+            // Форматируем дату
+            const creationDate = new Date(url.creationDate);
+            const formattedDate = creationDate.toLocaleDateString('ru-RU');
+            const fullDate = creationDate.toLocaleDateString('ru-RU') + ' ' +
+                            creationDate.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+
+            return `
+            <tr class="url-row" data-id="${url.id}">
+                <td class="short-url-cell">
+                    <div class="url-info">
+                        <strong class="short-url-text">${url.shortUrl}</strong>
+                        <small class="short-url-link">
+                            <a href="${baseUrl}/${url.shortUrl}" target="_blank">
+                                ${baseUrl}/${url.shortUrl}
+                            </a>
+                        </small>
+                    </div>
+                </td>
+                <td class="full-url-cell">
+                    <div class="full-url-container" title="${url.fullUrl}">
+                        <a href="${url.fullUrl}" target="_blank" class="full-url-link">
+                            ${url.fullUrl}
+                        </a>
+                    </div>
+                </td>
+                <td class="date-cell">
+                    <span class="date-text" title="${fullDate}">
+                        ${formattedDate}
+                    </span>
+                </td>
+                <td class="counter-cell">
+                    <span class="badge counter-badge ${isPopular ? 'bg-success' : 'bg-secondary'} fs-6 passage-counter">
+                        ${url.passageCounter}
+                    </span>
+                </td>
+                <td class="actions-cell">
+                    <div class="btn-group btn-group-sm" role="group">
+
+                        <!-- Кнопка ОБНОВЛЕНИЯ (редактирования) -->
+                        <a href="@Url.Action("UrlUpdatePage", "Home")?id=${url.id}"
+                           class="btn btn-warning m-1"
+                           title="Редактировать">
+                            <i class="fas fa-edit"></i>
+                        </a>
+
+                        <!-- Кнопка УДАЛЕНИЯ -->
+                        <form method="post"
+                              action="@Url.Action("UrlDelete", "Home")"
+                              class="d-inline"
+                              onsubmit="return confirm('Удалить эту ссылку?')">
+                            <input type="hidden" name="__RequestVerificationToken"
+                                   value="${getAntiForgeryToken()}">
+                            <input type="hidden" name="id" value="${url.id}" />
+                            <button type="submit"
+                                    class="btn btn-outline-danger m-1"
+                                    title="Удалить">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>`;
+        }
+
+
+        function getAntiForgeryToken() {
+            return $('input[name="__RequestVerificationToken"]').val();
+        }
+
+
+        function updateTotalCount() {
+            const visibleCount = $('#urls-table-body tr:visible').length;
+            $('#total-count').text(`(${visibleCount} показано)`);
+        }
+
+        function updateResetButton() {
+            if (currentSearch) {
+                $('#reset-search').removeClass('d-none');
+            } else {
+                $('#reset-search').addClass('d-none');
+            }
+        }
+
+        function showLoading(show) {
+            if (show) {
+                $('#loading-indicator').removeClass('d-none');
+            } else {
+                $('#loading-indicator').addClass('d-none');
+            }
+        }
+
+        function showLoadingMore(show) {
+            if (show) {
+                $('#loading-more-indicator').removeClass('d-none');
+            } else {
+                $('#loading-more-indicator').addClass('d-none');
+            }
+        }
+
+        function showLoadMoreButton() {
+            $('#load-more-container').removeClass('d-none');
+        }
+
+        function hideLoadMoreButton() {
+            $('#load-more-container').addClass('d-none');
+        }
+
+        function showNoDataMessage() {
+            $('#no-data-message').removeClass('d-none');
+        }
+
+        function hideNoDataMessage() {
+            $('#no-data-message').addClass('d-none');
+        }
+    </script>
+
+    
+}

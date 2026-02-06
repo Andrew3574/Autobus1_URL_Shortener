@@ -1,0 +1,278 @@
+﻿@using Autobus1_Burlakov.Models.DTOs
+@model UrlsDataDto
+@{
+    ViewData["Title"] = "Сокращение ссылок";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-link me-2"></i>Сокращение ссылок
+                    </h3>
+                </div>
+
+                <div class="card-body">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <h5 class="alert-heading">Ошибки:</h5>
+                            <div asp-validation-summary="All" class="mb-0"></div>
+                        </div>
+                    }
+
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model?.ShortUrl))
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <h5 class="alert-heading">
+                                <i class="fas fa-check-circle me-2"></i>Ссылка успешно создана!
+                            </h5>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="shortUrl"
+                                       value="@Model.ShortUrl" readonly>
+                                <button class="btn btn-outline-success" type="button"
+                                        onclick="copyToClipboard()">
+                                    <i class="fas fa-copy me-1"></i>Копировать
+                                </button>
+                            </div>
+                            <a href="@Model.ShortUrl" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Перейти по ссылке
+                            </a>
+                        </div>
+                    }
+
+                    <form method="post" asp-action="Index" id="urlForm">
+                        <div class="mb-4">
+                            <label asp-for="FullUrl" class="form-label fw-bold">
+                                <i class="fas fa-globe me-1"></i>Введите длинную ссылку
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-link"></i>
+                                </span>
+                                <input type="url" asp-for="FullUrl" class="form-control form-control-lg"
+                                       placeholder="https://example.com/very-long-url-path"
+                                       required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex flex-wrap align-items-end gap-3 mb-4">
+                            <!-- Поле лимита переходов -->
+                            <div class="flex-grow-1" style="max-width: 300px;">
+                                <label asp-for="PassageCounter" class="form-label fw-bold">
+                                    <i class="fas fa-bullseye me-1"></i>Введите количество переходов
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-arrow-right-to-bracket"></i>
+                                    </span>
+                                    <input type="number" asp-for="PassageCounter"
+                                           class="form-control form-control-lg"
+                                           value="10"
+                                           required>                                   
+                                </div>
+                            </div>
+
+                            <!-- Кнопка сокращения -->
+                            <div class="flex-shrink-0 mt-auto">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-scissors me-2"></i>Сократить ссылку
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>             
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+
+    <script>
+        // Копирование в буфер обмена
+        function copyToClipboard() {
+            const shortUrl = document.getElementById('shortUrl');
+            shortUrl.select();
+            shortUrl.setSelectionRange(0, 99999); // Для мобильных устройств
+
+            try {
+                navigator.clipboard.writeText(shortUrl.value).then(() => {
+                    showToast('Ссылка скопирована в буфер обмена!', 'success');
+                });
+            } catch (err) {
+                // Fallback для старых браузеров
+                document.execCommand('copy');
+                showToast('Ссылка скопирована в буфер обмена!', 'success');
+            }
+        }
+
+        // Поделиться ссылкой
+        function shareLink() {
+            const shortUrl = document.getElementById('shortUrl').value;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Моя короткая ссылка',
+                    text: 'Вот короткая ссылка, которую я создал:',
+                    url: shortUrl
+                });
+            } else {
+                copyToClipboard();
+                showToast('Ссылка скопирована. Теперь можете поделиться ею!', 'info');
+            }
+        }
+
+        // Генерация QR-кода
+        @if (!string.IsNullOrEmpty(Model?.ShortUrl))
+        {
+                <text>
+                document.addEventListener('DOMContentLoaded', function() {
+                    QRCode.toCanvas(document.getElementById('qrcode'), '@Model.ShortUrl',
+                    { width: 200, margin: 1 }, function(error) {
+                        if (error) console.error(error);
+                    });
+                });
+                </text>
+        }
+
+        // Валидация кастомного алиаса в реальном времени
+        document.getElementById('CustomAlias')?.addEventListener('input', function(e) {
+            const value = e.target.value;
+            const regex = /^[a-zA-Z0-9\-_]*$/;
+
+            if (!regex.test(value)) {
+                e.target.value = value.replace(/[^a-zA-Z0-9\-_]/g, '');
+                showToast('Можно использовать только буквы, цифры, дефисы и подчеркивания', 'warning');
+            }
+        });
+
+        // Превью ссылки при вводе кастомного алиаса
+        document.getElementById('CustomAlias')?.addEventListener('input', function(e) {
+            const domain = document.getElementById('domainPreview');
+            const alias = e.target.value.trim();
+
+            if (alias) {
+                domain.textContent = `@Context.Request.Scheme://@Context.Request.Host/${alias}`;
+            } else {
+                domain.textContent = `@Context.Request.Scheme://@Context.Request.Host/`;
+            }
+        });
+
+        // Уведомления
+        function showToast(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = `toast align-items-center text-white bg-${type} border-0`;
+            toast.setAttribute('role', 'alert');
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">${message}</div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                            data-bs-dismiss="toast"></button>
+                </div>
+            `;
+
+            const container = document.getElementById('toastContainer') ||
+                              (() => {
+                                  const div = document.createElement('div');
+                                  div.id = 'toastContainer';
+                                  div.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+                                  document.body.appendChild(div);
+                                  return div;
+                              })();
+
+            container.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+
+            toast.addEventListener('hidden.bs.toast', function () {
+                toast.remove();
+            });
+        }
+
+        // Автоматическая проверка URL при потере фокуса
+        document.getElementById('FullUrl')?.addEventListener('blur', function(e) {
+            const url = e.target.value.trim();
+            if (url && !isValidUrl(url)) {
+                showToast('Проверьте правильность URL. Должен начинаться с http:// или https://', 'warning');
+            }
+        });
+
+        function isValidUrl(string) {
+            try {
+                new URL(string);
+                return true;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        // Подсветка примеров URL
+        document.querySelectorAll('.form-text').forEach(el => {
+            if (el.textContent.includes('https://')) {
+                el.innerHTML = el.innerHTML.replace(
+                    /(https?:\/\/[^\s]+)/g,
+                    '<span class="text-primary fw-semibold">$1</span>'
+                );
+            }
+        });
+    </script>
+
+    <style>
+        .card {
+            border-radius: 15px;
+            border: none;
+        }
+
+        .card-header {
+            border-radius: 15px 15px 0 0 !important;
+        }
+
+        .input-group-text {
+            background-color: #f8f9fa;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #0b5ed7, #0a58ca);
+            transform: translateY(-1px);
+            transition: all 0.2s;
+        }
+
+        #qrcode canvas {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
+
+        .toast {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+}

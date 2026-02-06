@@ -1,0 +1,33 @@
+﻿
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.text-truncate {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.35em 0.65em;
+}
+
+.btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+#loading-indicator, #no-data-message {
+    position: relative;
+    min-height: 200px;
+}
+
+#loading-more-indicator {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
